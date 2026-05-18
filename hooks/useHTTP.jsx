@@ -38,6 +38,7 @@ export default function useHTTP() {
 			setData(resData)
 			return resData
 		} catch (err) {
+			console.log(err);
 			handleErrorState(
 				err.message === 'Failed to fetch'
 					? 'Server nie odpowiada, sprawdź swoje połączenie z siecią i spróbuj ponownie.'
