@@ -1,0 +1,35 @@
+.link__item {
+	margin-top: 1rem;
+	text-align: center;
+	transition: transform 0.3s;
+}
+
+.link__item:hover {
+	transform: scale(1.05);
+}
+
+.icon {
+	padding: 0.6rem;
+	width: 4rem;
+	height: 4rem;
+	border: 1px solid var(--white);
+    box-shadow: none;
+}
+
+.sociail__media__title {
+    margin-bottom: 2rem;
+}
+
+.copyright {
+	margin-top: 5rem;
+}
+
+@media (width < 650px) {
+	.links__container {
+		flex-direction: column;
+	}
+
+    .links__box {
+        margin-bottom: 2rem;
+    }
+}

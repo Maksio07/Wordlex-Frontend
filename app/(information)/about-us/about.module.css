@@ -1,0 +1,67 @@
+.hero {
+	background-image: url('../../../public/about-us/book-small.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+    object-fit: cover;
+}
+
+.hero__shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #00000075;
+	z-index: 0;
+}
+
+.title {
+	margin-top: 3rem;
+}
+
+.text__container {
+	margin: 2rem auto;
+}
+
+.text {
+	margin-bottom: 1.6rem;
+    text-align: center;
+}
+
+@media (width > 650px) {
+	.hero {
+		background-image: url('../../../public/about-us/book-big.jpg');
+	}
+}
+
+@media (width< 860px) {
+	.text {
+		width: 75%;
+	}
+}
+
+@media (width< 650px) {
+	.text {
+		font-size: 1.4rem;
+	}
+}
+
+@media (width< 500px) {
+	.text {
+		width: 90%;
+	}
+}
+
+@media (width< 415px) {
+	.text {
+		width: 100%;
+        align-self: center;
+	}
+}
+
+@media (width< 375px) {
+	.hero {
+        height: 76rem;
+    }
+}

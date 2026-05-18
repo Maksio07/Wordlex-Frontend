@@ -1,0 +1,98 @@
+.top {
+	background: var(--contactPageBg);
+}
+
+.top__img {
+	box-shadow: 0 0 16px var(--cardShadow);
+}
+
+.title__box {
+	padding: 0 1rem;
+}
+
+.title {
+	margin-top: 3rem;
+}
+
+.subtitle {
+	margin-top: 1.4rem;
+}
+
+.data__box {
+	margin: 1.6rem;
+	box-shadow: 0 0 12px var(--cardShadow);
+}
+
+.data__title {
+	margin-bottom: 2rem;
+}
+
+.call__us__box {
+	margin-top: 5rem;
+}
+
+.call__us__title,
+.call__us__subtitle,
+.call__us__info {
+	margin-bottom: 1.2rem;
+}
+
+@media (width <= 1135px) {
+	.data__container {
+		margin: 2.6rem 0;
+	}
+}
+
+@media (width < 675px) {
+	.top__img {
+		margin-top: 3.2rem;
+	}
+}
+
+@media(width < 450px) {
+	.call__us__title {
+		font-size: 3.6rem;
+	}
+
+	.call__us__subtitle {
+		font-size: 2.6rem;
+	}
+
+	.call__us__info {
+		margin-top: 2rem;
+		font-size: 1.8rem;
+	}
+}
+
+@media (width < 415px) {
+	.title {
+		font-size: 3.2rem;
+	}
+	.subtitle {
+		font-size: 2rem;
+	}
+	.top__img {
+		width: 32rem;
+		height: 32rem;
+	}
+}
+
+@media (width< 400px) {
+	.data__box {
+		width: 26rem;
+	}
+}
+
+@media (width < 315px) {
+	.top__img {
+		width: 28rem;
+		height: 28rem;
+	}
+	.data__box {
+		width: 22rem;
+	}
+
+	.call__us__box {
+		height: 62rem;	
+	}
+}

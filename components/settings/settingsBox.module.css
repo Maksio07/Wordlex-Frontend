@@ -1,0 +1,31 @@
+.box {
+	padding: 1rem;
+	box-shadow: 0 0 5px var(--cardShadow);
+	border-radius: 0 1.5rem 1.5rem 0;
+}
+
+@media (width < 1065px) {
+	.box {
+		height: 84rem;
+	}
+}
+
+@media (width < 810px) {
+	.box {
+		height: 90rem;
+	}
+}
+
+@media (width < 675px) {
+	.box {
+		width: 100%;
+		height: 98rem;
+		border-radius: 0 0 1.5rem 1.5rem;
+	}
+}
+
+@media (width < 500px) {
+	.box {
+		height: 138rem;
+	}
+}

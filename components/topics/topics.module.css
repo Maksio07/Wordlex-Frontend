@@ -1,0 +1,26 @@
+.topic {
+	margin: 1rem;
+	padding: 0.4rem 0;
+    box-shadow: 0 0 12px var(--cardShadow);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.topic:hover {
+	transform: scale(1.05);
+	background-color: var(--addBtnHover);
+}
+
+.topic_text {
+	font-size: 1.6rem;
+	font-weight: 500;
+	color: var(--links);
+}
+
+.name_in_polish {
+	margin-right: 3rem;
+}
+
+.words__amount {
+	margin-top: 1rem 3rem 0 0;
+}
+

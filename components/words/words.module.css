@@ -1,0 +1,23 @@
+.word {
+	margin: 1rem;
+	box-shadow: 0 0 12px var(--cardShadow);
+	transition: transform 0.3s, background-color 0.3s;
+}
+
+.word:hover {
+	transform: scale(1.05);
+	background-color: var(--addBtnHover);
+}
+
+.img {
+    object-fit: cover;
+    border-radius: .8rem 0 0 .8rem;
+}
+
+.text_box {
+    margin: 1rem
+}
+
+.name_in_polish {
+    margin-top: 1.4rem;
+}

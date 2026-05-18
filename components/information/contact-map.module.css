@@ -1,0 +1,54 @@
+.contact__map {
+	box-shadow: 0 0 12px var(--cardShadow);
+}
+
+.links__container {
+	padding: 1rem;
+}
+
+.title,
+.info {
+	margin-bottom: 2.8rem;
+}
+
+.link__box {
+	margin: 0 1rem;
+}
+
+.link__item {
+	margin: 1rem 1rem;
+	padding: 0.4rem 1.2rem;
+    box-shadow: 0 0 4px var(--cardShadow);
+	transition: transform 0.3s;
+}
+
+.link__item:hover {
+	transform: scale(1.05);
+}
+
+.link__item_text {
+    margin-left: .6rem;
+}
+
+@media(width < 700px) {
+    .contact__map__container {
+        flex-direction: column;
+        height: 90rem;
+    }
+
+    .contact__map {
+        margin-top: 2rem;
+        width: 90%;
+        height: 50%;
+    }
+
+    .links__container {
+        width: 100%;
+    }
+}
+
+@media(width < 450px) {
+    .contact__map {
+        height: 40%;
+    }
+}

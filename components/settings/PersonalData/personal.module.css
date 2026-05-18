@@ -1,0 +1,146 @@
+.title {
+	margin: 2rem auto;
+}
+
+.line {
+	margin-top: 1rem;
+	width: 75%;
+	height: 0.2rem;
+	background-color: rgba(187, 176, 176, 0.863);
+}
+
+.inputs__container {
+	margin-top: 3rem;
+}
+
+.data__box {
+	margin: 2.4rem 1rem;
+}
+
+.text {
+	margin: 0 1.4rem;
+}
+
+.input {
+	margin: 0 1.2rem;
+	padding: 0.6rem 1.2rem;
+	width: 18rem;
+	font-size: 1.6rem;
+	outline: none;
+	background-color: white;
+	border: 1px solid var(--navigationBackground);
+	border-radius: 0.8rem;
+	box-shadow: 0 0 5px var(--cardShadow);
+}
+
+.input:focus {
+	border: 1px solid var(--componentsBackground);
+}
+
+.delete__btn,
+.edit__btn {
+	padding: 0.6rem 1.2rem;
+	border-radius: 0.8rem;
+	font-size: 1.6rem;
+	color: var(--white);
+	font-weight: 500;
+	cursor: pointer;
+	transition: transform 0.3s;
+}
+
+.edit__btn {
+	margin-left: 2.8rem;
+	background-color: var(--navigationBackground);
+}
+
+.edit__btn:hover,
+.delete__btn:hover {
+	transform: scale(1.05);
+}
+
+.danger__zone {
+	margin: 3rem 0;
+	padding: 2.6rem 1rem;
+	border: 1px solid rgb(216, 16, 16);
+}
+
+.danger__subtitle {
+	margin-bottom: 0.8rem;
+}
+
+.delete__btn {
+	margin: 0 0.6rem;
+	background-color: rgb(171, 33, 33);
+}
+
+.ul_loading {
+	margin-top: 5rem;
+	place-self: center;
+	background: var(--loadingGradient) -100%/ 200%;
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	font-size: 1.8rem;
+	font: 500 sans-serif;
+	animation: loading 2s linear infinite;
+}
+
+@keyframes loading {
+	to {
+		background-position: 100%;
+	}
+}
+
+@media (width < 1065px) {
+	.inputs__container {
+		flex-direction: column;
+	}
+
+	.inputs__box {
+		align-items: center;
+		width: 100%;
+	}
+
+	.data__box {
+		justify-content: space-between;
+		width: 80%;
+	}
+}
+
+@media (width < 975px) {
+	.danger__zone {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.danger__subtitle {
+		text-align: center;
+	}
+
+	.delete__btn {
+		margin-top: 1.6rem;
+	}
+}
+
+@media (width < 675px) {
+	.data__box {
+		width: 100%;
+	}
+}
+
+@media (width < 500px) {
+	.data__box {
+		flex-direction: column;
+	}
+
+	.label, .edit__btn {
+		margin: 0;
+	}
+
+	.input, .text {
+		margin: 1.8rem 0;
+	}
+}
+
+
+

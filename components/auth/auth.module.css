@@ -1,0 +1,20 @@
+.login__links {
+	margin: 2rem 0;
+}
+
+.forgot__password__link,
+.signup__link {
+	transition: color 0.3s, transform 0.3s;
+}
+
+.forgot__password__link:hover,
+.signup__link:hover {
+	color: var(--mainBackground);
+	transform: scale(106%);
+}
+
+@media (width < 360px) {
+	.forgot__password__link {
+		margin-bottom: 1.8rem;
+	}
+}

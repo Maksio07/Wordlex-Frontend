@@ -1,0 +1,116 @@
+.language__box[data='english'] {
+	background-image: url('../../public/flags/english-small.png');
+}
+
+.language__box[data='german'] {
+	background-image: url('../../public/flags/german-small.png');
+}
+
+.language__box[data='spanish'] {
+	background-image: url('../../public/flags/spanish-small.png');
+}
+
+.language__box[data='portugal'] {
+	background-image: url('../../public/flags/portugal-small.png');
+}
+
+.language__box[data='french'] {
+	background-image: url('../../public/flags/french-small.png');
+}
+
+.language__box[data='italian'] {
+	background-image: url('../../public/flags/italian-small.png');
+}
+
+.language__box[data='russian'] {
+	background-image: url('../../public/flags/russian-small.png');
+}
+
+.language__box {
+	margin: 1rem;
+	padding: 0.6rem 1.2rem;
+	box-shadow: 0 0 12px var(--cardShadow);
+	background-position: center;
+	background-size: cover;
+	transition: transform 0.3s;
+}
+
+.language__box:hover {
+	transform: scale(1.05);
+}
+
+.language__shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.623);
+	border-radius: 0.8rem;
+	transition: background-color 0.3s;
+}
+
+.language__shadow:hover {
+	background-color: #000000d5;
+}
+
+.lang__name {
+	text-shadow: 0 0 4px white;
+}
+
+.delete_btn {
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	cursor: pointer;
+	transition: transform 0.3s;
+}
+
+.delete_btn:hover {
+	transform: scale(1.1);
+}
+
+.modal__box {
+	transition: background-color 0.3s;
+}
+
+.modal__box:hover {
+	background-color: #d6cdcd;
+}
+
+.arrow {
+	margin-right: 1rem;
+}
+
+.languages__list {
+	position: absolute;
+	top: 12rem;
+}
+
+.list__item {
+	padding: 0.2rem 0.6rem;
+	border-bottom: 1px solid var(--title);
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.list__item:first-child {
+	border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.list__item:last-child {
+	border-radius: 0 0 0.8rem 0.8rem;
+}
+
+.list__item:hover {
+	background-color: #a89c9c;
+}
+
+.list__item__img {
+	margin-right: 1.6rem;
+}
+
+.error__message {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}

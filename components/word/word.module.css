@@ -1,0 +1,97 @@
+.buttons_box {
+	margin-top: 3.8rem;
+	gap: 2.8rem;
+}
+
+.disabled {
+	padding: 0.6rem 1.2rem;
+	border-radius: 0.8rem;
+	color: white;
+	font-size: 1.4rem;
+	box-shadow: 0 0 5px var(--cardShadow);
+	background-color: #706c6c5b;
+	cursor: default;
+}
+
+.card {
+	position: relative;
+	margin: 6rem auto;
+	perspective: 1200px;
+	width: 32rem;
+	height: 43rem;
+	border-radius: 0.8rem;
+}
+
+.inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+	transform-style: preserve-3d;
+}
+
+.flipped {
+	transform: rotateX(180deg);
+	opacity: 1;
+}
+
+.front,
+.back {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	background-color: var(--white);
+	border: 1px solid var(--navigationBackground);
+	border-radius: 0.8rem;
+	box-shadow: 0 0 8px var(--cardShadow);
+}
+
+.back {
+	justify-content: center;
+	transform: rotateX(180deg);
+}
+
+.img {
+	width: 100%;
+	height: 30rem;
+	object-fit: cover;
+	border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.title {
+	margin: 2.2rem 0;
+}
+
+.example {
+	margin-bottom: 2.6rem;
+}
+
+.handleBtn,
+.navigation_btn {
+	padding: 0.6rem 1.2rem;
+	background-color: var(--navigationBackground);
+	border-radius: 0.8rem;
+	color: white;
+	font-size: 1.4rem;
+	box-shadow: 0 0 5px var(--cardShadow);
+	cursor: pointer;
+	transition: transform 0.3s, background-color 0.3s;
+}
+
+.handleBtn:hover,
+.navigation_btn:hover {
+	transform: scale(1.05);
+	background-color: var(--addBtnHover);
+}
+
+@media (width < 350px) {
+	.card {
+		width: 26rem;
+	}
+}

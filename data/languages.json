@@ -1,0 +1,45 @@
+[
+	{
+		"id": 1,
+		"name": "Angielski",
+		"language_id": "english",
+		"img_path": "/svgFlags/english.svg"
+	},
+	{
+		"id": 2,
+		"name": "Niemiecki",
+		"language_id": "german",
+		"img_path": "/svgFlags/german.svg"
+	},
+	{
+		"id": 3,
+		"name": "Francuzki",
+		"language_id": "french",
+		"img_path": "/svgFlags/french.svg"
+	},
+	{
+		"id": 4,
+		"name": "Hiszpański",
+		"language_id": "spanish",
+		"img_path": "/svgFlags/spanish.svg"
+	},
+	{
+		"id": 5,
+		"name": "Portugalski",
+		"language_id": "portugal",
+		"img_path": "/svgFlags/portugal.svg"
+	},
+	{
+		"id": 6,
+		"name": "Włoski",
+		"language_id": "italian",
+		"img_path": "/svgFlags/italian.svg"
+	},
+	{
+		"id": 7,
+		"name": "Rosyjski",
+		"language_id": "russian",
+		"img_path": "/svgFlags/russian.svg"
+	}
+]
+

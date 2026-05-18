@@ -1,0 +1,26 @@
+.title {
+	margin: 5rem 0;
+}
+
+.box{
+    margin: 1.6rem;
+    box-shadow: 0px 0px 12px var(--cardShadow);
+}
+
+.img {
+    object-fit: cover;
+    border-radius: .8rem .8rem 0 0;
+}
+
+.member__title, .member__position{
+    margin: 1rem 0;
+}
+
+.line {
+	margin-bottom: 1rem;
+    background-color: var(--title);
+}
+
+.member__description {
+    padding: .4rem;
+}

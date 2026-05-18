@@ -1,0 +1,61 @@
+@import 'tailwindcss';
+@import '../styles/colors.css';
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+.wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	max-width: 1440px;
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+
+body {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: 'center';
+	align-items: center;
+	min-height: 100vh;
+	min-width: 100vw;
+	background: var(--mainBackground);
+	background: var(--mainBackgroundGradient);
+	overflow-x: hidden;
+}
+
+.not-found-tite {
+	margin-top: 8rem;
+}
+
+.not-found-subtitle,
+.not-found-info {
+	margin-top: 5rem;
+}
+
+.auth-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 8rem;
+}
+
+.signup {
+	padding-bottom: 5rem;
+}
+
+.auth{
+	margin-bottom: 6rem;
+}

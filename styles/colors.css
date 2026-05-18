@@ -1,0 +1,87 @@
+:root {
+	--mainBackground: #fcecec;
+	--mainBackgroundGradient: radial-gradient(circle, rgba(252, 236, 236, 1) 4%, rgba(229, 223, 240, 1) 96%);
+	--links: #fcecec;
+	--linksHover: #4f46a0e7;
+	--startBtnText: #fcecec;
+	--cardShadow: rgba(0, 0, 0, 0.301);
+	--navigationBackground: #4398ca;
+	--activeNavLink: #c9e817;
+	--completeBtnHover: #272643;
+	--title: rgb(36, 34, 34);
+	--white: #e6e0e0ef;
+	--aboutUsCardBg: #f7f1f1e5;
+	--contactPageBg: linear-gradient(
+		180deg,
+		#4398cade 0%,
+		rgb(73, 167, 221) 42%,
+		rgba(130, 185, 218, 0.88) 68%,
+		rgb(176, 204, 221) 85%,
+		rgb(224, 227, 230) 100%
+	);
+	--loadingText: #555;
+	--loadingGradient: linear-gradient(
+		90deg,
+		rgba(67, 152, 202, 0.93) 0%,
+		rgba(13, 112, 168, 0.89) 25%,
+		rgba(67, 152, 202, 1) 50%,
+		rgba(13, 112, 168, 1) 75%,
+		rgba(67, 152, 202, 1) 100%
+	);
+	--addBtnHover: #2686be;
+	--chooseLanguageHover: rgba(201, 201, 221, 0.87);
+	--componentsBackground: #2c698d;
+	--submitBtnBg: #e06dc0de;
+	--submitBtnBgHover: #d649aede;
+	--beInTouchTitle: #4398cade;
+	--facebook: #3b5998;
+	--linkedin: #0e76a8;
+	--instagram: #e1306c;
+	--telegram: #0068b3;
+	--aboutUsNavBg: #0000008b;
+	--navBg: #9c9b9c00;
+	--settingsLeft: #fcecec;
+	--settingsHover: #95c9e7de;
+}
+
+.dark {
+	--mainBackground: #232326;
+	--mainBackgroundGradient: radial-gradient(circle, rgba(35, 35, 38, 0.93) 4%, rgba(36, 33, 33, 0.98) 96%);
+	--links: rgb(255, 255, 255);
+	--linksHover: #e5e914f8;
+	--startBtnText: #1814e9;
+	--cardShadow: rgba(245, 238, 238, 0.479);
+	--navigationBackground: #4f46a0;
+	--activeNavLink: #c2d41eee;
+	--completeBtnHover: #c2d41ea2;
+	--title: #ffffff;
+	--white: #e6e0e0ef;
+	--aboutUsCardBg: #232326;
+	--aboutUsBoxShadow: rgba(255, 255, 255, 0.493);
+	--contactPageBg: linear-gradient(
+		180deg,
+		#4f46a0e7 0%,
+		#4f46a0e1 12%,
+		rgba(128, 111, 235, 0.884) 42%,
+		rgba(111, 108, 173, 0.89) 65%,
+		rgba(112, 108, 172, 0.89) 85%,
+		rgba(131, 131, 177, 0.89) 100%
+	);
+	--loadingText: #e9dede;
+	--loadingGradient: linear-gradient(
+		90deg,
+		rgba(79, 70, 160, 0.93) 0%,
+		rgba(137, 130, 196, 0.89) 25%,
+		rgba(79, 70, 160, 1) 50%,
+		rgba(137, 130, 196, 1) 75%,
+		rgba(79, 70, 160, 1) 100%
+	);
+	--addBtnHover: #2c2280e7;
+	--chooseLanguageHover: rgba(201, 201, 236, 0.87);
+	--componentsBackground: #5244d6e7;
+	--submitBtnBg: #e06d86;
+	--submitBtnBgHover: #cf4d69;
+	--beInTouchTitle: #ffffff;
+	--settings: #312f2f;
+	--settingsHover: #9189dfc2;
+}
