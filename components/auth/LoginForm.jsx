@@ -18,7 +18,7 @@ export default function LoginForm({ onGetUserData, userData, onLogin }) {
 				type='text'
 				htmlFor='email'
 				id='email'
-				minLength='4'
+				minLength='2'
 				value={userData.email}
 				onChange={onGetUserData}
 			/>
