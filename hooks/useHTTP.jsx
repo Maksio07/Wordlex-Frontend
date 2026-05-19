@@ -26,19 +26,18 @@ export default function useHTTP() {
 				resData = await res.json()
 			} else {
 				const textData = await res.text()
-				// throw new Error('Coś poszło nie tak, spróbuj ponownie.')
+				throw new Error('Coś poszło nie tak, spróbuj ponownie.')
 			}
 
-			// if (!res.ok) {
-			// 	throw new Error(
-			// 		resData.message || 'Server nie odpowiada, sprawdź swoje połączenie z siecią i spróbuj ponownie.'
-			// 	)
-			// }
+			if (!res.ok) {
+				throw new Error(
+					resData.message || 'Server nie odpowiada, sprawdź swoje połączenie z siecią i spróbuj ponownie.'
+				)
+			}
 
 			setData(resData)
 			return resData
 		} catch (err) {
-			console.log(err);
 			handleErrorState(
 				err.message === 'Failed to fetch'
 					? 'Server nie odpowiada, sprawdź swoje połączenie z siecią i spróbuj ponownie.'
