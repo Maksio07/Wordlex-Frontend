@@ -11,6 +11,7 @@ import Loading from '../../../components/UI/Loading'
 import ErrorMessage from '../../../components/UI/ErrorMessage'
 import ConfirmMessage from '../../../components/UI/ConfirmMessage'
 import { useUserDataReceiving } from '../../../hooks/useUserDataReceiving'
+import { redirect } from 'next/dist/server/api-utils'
 
 export default function Login() {
 	const userAuthCtx = useContext(UserAuthenticationContext)
@@ -43,6 +44,12 @@ export default function Login() {
 			}),
 			credentials: 'include',
 		})
+
+		if(resData.token) {
+			document.cookie = `token=${resData.token}; path=/; max-age=86400; secure; samesite=lax`
+		} else {
+			redirect('/login')
+		}
 
 		if (resData !== undefined) {
 			userAuthCtx.handleToken(resData.token)

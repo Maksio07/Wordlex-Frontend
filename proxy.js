@@ -20,23 +20,23 @@ export async function proxy(req) {
         return NextResponse.next()
     }
 
-	if (protectedRoutes.some(path => pathname.startsWith(path))) {
-		const token = req.cookies.get('token')?.value
+	// if (protectedRoutes.some(path => pathname.startsWith(path))) {
+	// 	const token = req.cookies.get('token')?.value
 
-		if (!token) {
-			const loginUrl = new URL('/login', req.url)
-			loginUrl.searchParams.set('from', pathname)
-			return NextResponse.redirect(loginUrl)
-		}
+	// 	if (!token) {
+	// 		const loginUrl = new URL('/login', req.url)
+	// 		loginUrl.searchParams.set('from', pathname)
+	// 		return NextResponse.redirect(loginUrl)
+	// 	}
 
-		const valid = await verifyJWT(token)
+	// 	const valid = await verifyJWT(token)
 
-		if (!valid) {
-			const loginUrl = new URL('/login', req.url)
-			loginUrl.searchParams.set('from', pathname)
-			return NextResponse.redirect(loginUrl)
-		}
-	}
+	// 	if (!valid) {
+	// 		const loginUrl = new URL('/login', req.url)
+	// 		loginUrl.searchParams.set('from', pathname)
+	// 		return NextResponse.redirect(loginUrl)
+	// 	}
+	// }
 
 	return NextResponse.next()
 }

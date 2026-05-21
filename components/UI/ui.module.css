@@ -227,6 +227,7 @@
 .delete__modal {
 	padding: 1rem;
 	box-shadow: 0 0 5px var(--cardShadow);
+	transform: translate(-50%, -50%);
 	overflow: hidden;
 }
 
