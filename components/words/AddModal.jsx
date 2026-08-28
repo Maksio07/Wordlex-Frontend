@@ -7,6 +7,7 @@ import useCsrf from '../../hooks/useCsrf'
 import { isEmpty } from '../../util/validation'
 import { useUserDataReceiving } from '../../hooks/useUserDataReceiving'
 import ErrorMessage from '../UI/ErrorMessage'
+import {slugify} from '../util/slugify.js'
 
 export default function AddModal({ languageData, topicData, onCloseAddModal, onLoadWords }) {
 	const { enteredData, handleEnteredData } = useUserDataReceiving({
@@ -26,11 +27,8 @@ export default function AddModal({ languageData, topicData, onCloseAddModal, onL
 			setError('Pierwsze dwa pola powinny być uzupełnione.')
 		}
 
-		const wordId =
-			topicData.topicIdInt +
-			(Math.random() * 10000).toFixed(0) +
-			'-' +
-			enteredData.wordName.toLowerCase().split(' ').join('-')
+		const wordId = `${(Math.random() * 10000).toFixed(0) +
+			'-' + slugify(enteredData.wordName)}`
 
 		const resData = await sendRequest(
 			`/profile/${topicData.topicData.user_id}/${languageData.languageId}/${topicData.topicData.topic_id}`,
