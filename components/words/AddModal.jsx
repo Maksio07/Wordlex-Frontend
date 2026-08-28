@@ -27,7 +27,7 @@ export default function AddModal({ languageData, topicData, onCloseAddModal, onL
 			setError('Pierwsze dwa pola powinny być uzupełnione.')
 		}
 
-		const wordId = `${(Math.random() * 10000).toFixed(0) +
+		const wordId = `${topicData.topicIdInt * (Math.random() * 10000).toFixed(0) +
 			'-' + slugify(enteredData.wordName)}`
 
 		const resData = await sendRequest(
