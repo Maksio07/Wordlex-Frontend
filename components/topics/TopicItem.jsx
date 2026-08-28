@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import ActionBtn from '../UI/ActionBtn'
-import {slugify} from ''
+import {slugify} from '../util/slugify.js'
 import styles from './topics.module.css'
 
 export default function TopicItem({ topics, languageId, onDeleteTopic, onHandleEditModal, topicWords }) {
@@ -8,7 +8,7 @@ export default function TopicItem({ topics, languageId, onDeleteTopic, onHandleE
 		<>
 			{topics &&
 				topics.map(topic => {
-					const topicNavigationId = languageId + '-' + topic.topic_name.toLowerCase().replace(/\s+/g, '-')
+					const topicNavigationId = `${slugify(languageId)}-${slugify(topic.topic_name)}`
 					const amountOfWords = topicWords.filter(word => word.topic_id === topic.id)
 					return (
 						<li
