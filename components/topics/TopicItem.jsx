@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import ActionBtn from '../UI/ActionBtn'
+import {slugify} from ''
 import styles from './topics.module.css'
 
 export default function TopicItem({ topics, languageId, onDeleteTopic, onHandleEditModal, topicWords }) {
