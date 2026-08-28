@@ -7,7 +7,7 @@ import useCsrf from '../../hooks/useCsrf'
 import { isEmpty } from '../../util/validation'
 import { useUserDataReceiving } from '../../hooks/useUserDataReceiving'
 import ErrorMessage from '../UI/ErrorMessage'
-import {slugify} from '../util/slugify.js'
+import {slugify} from '../../util/slugify.js'
 
 export default function EditModal({ wordToEdit, onLoadWords, onCloseEditModal, topicData, languageData }) {
 	const { enteredData, handleEnteredData } = useUserDataReceiving({
